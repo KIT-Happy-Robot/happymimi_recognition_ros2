@@ -37,6 +37,13 @@ find_package(rosidl_default_generators REQUIRED)
 rosidl_generate_interfaces(
 	${PROJECT_NAME}
 	"srv/MultipleLocalize.srv"
+	"srv/RecognitionCount.srv"
+	"srv/RecognitionList.srv"
+	"srv/PositionEstimator.srv"
+	"srv/RecognitionFind.srv"
+	#"srv/RecognitionLocalize.srv"
+	#"action/RecognitionProcessing.action"
+
 )
 
 ament_package()
