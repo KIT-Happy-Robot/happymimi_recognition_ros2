@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.5)
-project(person_feature_extraction)
+project(recognition_processing)
 
 # Default to C99
 if(NOT CMAKE_C_STANDARD)
@@ -31,15 +31,5 @@ if(BUILD_TESTING)
   #set(ament_cmake_cpplint_FOUND TRUE)
   ament_lint_auto_find_test_dependencies()
 endif()
-
-find_package(rosidl_default_generators REQUIRED)
-
-rosidl_generate_interfaces(
-	${PROJECT_NAME}
-	"src/detect_cloth_color.py"
-	"src/height_estimation.py"
-
-)
-
 
 ament_package()
