@@ -150,5 +150,4 @@ if __name__ == '__main__':
         asw.run_server()
 　　　　
 　　　　"""
-
-
+rclpy.spin(node)
